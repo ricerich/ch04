@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "ch04"
 include ':app'
 include ':ch04_calc'
+include ':ch04_2_animal'

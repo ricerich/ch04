@@ -119,13 +119,21 @@ public class MainActivity extends AppCompatActivity
                 String str1 = edt1.getText().toString();
                 String str2 = edt2.getText().toString();
 
-                int n1 = Integer.parseInt(str1);
-                int n2 = Integer.parseInt(str2);
+                if(str1.equals("") || str2.equals(""))
+                {
 
-                int result = n1 * n2;
+                }
+                else
+                {
+                    int n1 = Integer.parseInt(str1);
+                    int n2 = Integer.parseInt(str2);
+
+                    int result = n1 * n2;
 
 //                tv1.setText(String.valueOf(result));
-                tv1.setText("계산결과:"+result);
+                    tv1.setText("계산결과:"+result);
+                }
+
             }
         });
 
